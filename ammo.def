@@ -4,6 +4,7 @@
 // Copyright 2002-2004 Raven Software
 //----------------------------------------------------------------
 
+
 // Define the types of ammo that are used in the game.
 // This entityDef is required by the game code.
 // Up to 16 ammo types can be defined.
@@ -22,12 +23,14 @@ entityDef ammo_types
 	"ammo_dmg"				"10"
 }
 
+
 entityDef ammo_triggersize_SP {
 	"triggerSize"		"32"
 }
 entityDef ammo_triggersize_MP {
 	"triggerSize"		"16"
 }
+
 
 entityDef ammo_default
 {	
@@ -37,6 +40,7 @@ entityDef ammo_default
 	"editor_rotatable"			"1"
 	"editor_menu"				"pickup"
 
+
 	"fx_respawn"				"effects/mp/itemrespawn.fx"
 	"snd_acquire"				"items_ammo_default"
 	"respawn"				"40"
@@ -44,37 +48,47 @@ entityDef ammo_default
 	"inherit"				"ammo_triggersize_SP"
 }
 
+
 entityDef ammo_machinegun
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"Large Clips"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_mg_rounds.lwo"
 	"size"					"32 32 32"
 	"inv_ammo_machinegun"			"50"
 
+
 	"inv_name"				"#str_107411"
 	"inv_icon"				"gfx/guis/hud/icons/item_machinegun.tga"
+
 
 	"dbTitle"				"Machinegun Rounds"
 	"dbText"				"Ammo for the machinegun.... <more text here>"
 	"dbFilter"				"item"
 
+
 	"editor_ignore"				"0"
 }
+
 
 entityDef ammo_machinegun_mp
 {
 	"inherit"				"ammo_railgun_mp"
 }
 
+
 entityDef ammo_nailgun
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"Large Nails"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_nails.lwo"
@@ -82,8 +96,10 @@ entityDef ammo_nailgun
 	"size"					"32 32 32"
 	"inv_ammo_nailgun"			"40"
 
+
 	"inv_name"				"#str_107412"
 	"inv_icon"				"gfx/guis/hud/icons/item_nailgun.tga"
+
 
 	"dbTitle"				"Nailgun Nails"
 	"dbText"				"Ammo for the nailgun.... <more text here>"
@@ -91,24 +107,30 @@ entityDef ammo_nailgun
 	"editor_ignore"				"0"
 }
 
+
 entityDef ammo_nailgun_mp
 {
 	"inherit"				"ammo_railgun_mp"
 }
 
+
 entityDef ammo_railgun
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"Large Slugs"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_rails.lwo"
 	"size"					"32 32 32"
 
+
 	"inv_ammo_railgun"			"5"
 	"inv_name"				"#str_107413"
 	"inv_icon"				"gfx/guis/hud/icons/item_railgun.tga"
+
 
 	"dbTitle"				"Railgun Slugs"
 	"dbText"				"Ammo for the railgun.... <more text here>"
@@ -116,12 +138,14 @@ entityDef ammo_railgun
 	"editor_ignore"				"0"
 }
 
+
 entityDef ammo_railgun_mp
 {
 	"inherit"				"ammo_railgun"
 	"inherit2"				"ammo_triggersize_MP"
 	"editor_ignore"				"1"
-	
+
+
 	"model"					"models/items/ammo/ammo_box.lwo"		
 	"skin"					"skins/items/ammo/railgun"
 	"skin_pickup"				"skins/items/ammo/railgun_pickup"	
@@ -129,19 +153,24 @@ entityDef ammo_railgun_mp
 	"inv_icon"				"gfx/guis/hud/icons/item_railgun_colored"
 }
 
+
 entityDef ammo_shotgun
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"Large Shells"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_shotgun.lwo"
 	"size"					"32 32 32"
 
+
 	"inv_ammo_shotgun"			"12"
 	"inv_name"				"#str_107414"
 	"inv_icon"				"gfx/guis/hud/icons/item_shotgun.tga"
+
 
 	"dbTitle"				"Shotgun Shells"
 	"dbText"				"Ammo for the shotgun.... <more text here>"
@@ -149,129 +178,165 @@ entityDef ammo_shotgun
 	"editor_ignore"				"0"
 }
 
+
 entityDef ammo_shotgun_mp
 {
 	"inherit"				"ammo_railgun_mp"
 }
 
+
 entityDef ammo_hyperblaster
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"HyperBlaster Ammo"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_hyper_ammo.lwo"
 	"size"					"32 32 32"
 
+
 	"inv_ammo_hyperblaster"			"40"
 	"inv_name"				"#str_107415"
 	"inv_icon"				"gfx/guis/hud/icons/item_hyperblaster.tga"
 
+
 	"editor_ignore"				"0"
 }
+
 
 entityDef ammo_hyperblaster_mp
 {
 	"inherit"				"ammo_railgun_mp"
 }
 
+
 entityDef ammo_rocketlauncher
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"Rocket Launcher Ammo"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_rockets.lwo"
 	"size"					"32 32 32"
 
+
 	"inv_ammo_rocketlauncher"		"6"
 	"inv_name"				"#str_107416"
 	"inv_icon"				"gfx/guis/hud/icons/item_rocket.tga"
 
+
 	"editor_ignore"				"0"
 }
+
 
 entityDef ammo_rocketlauncher_mp
 {
 	"inherit"				"ammo_railgun_mp"
 }
 
+
 entityDef ammo_grenadelauncher
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"Grenade Launcher Ammo"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_grenades.lwo"
 	"size"					"32 32 32"
 
+
 	"inv_ammo_grenadelauncher"		"10"
 	"inv_name"				"#str_107417"
 	"inv_icon"				"gfx/guis/hud/icons/item_grenade.tga"
 
+
 	"editor_ignore"				"0"
 }
+
 
 entityDef ammo_grenadelauncher_mp
 {
 	"inherit"				"ammo_railgun_mp"
 }
 
+
 entityDef ammo_lightninggun
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"Lightning Gun Ammo"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_lightning.lwo"
 	"size"					"32 32 32"
 
+
 	"inv_ammo_lightninggun"			"80"
 	"inv_name"				"#str_107418"
 	"inv_icon"				"gfx/guis/hud/icons/item_lightning.tga"
 
+
 	"editor_ignore"				"0"
-	
+
+
 	"fx_idle"				"effects/weapons/lightninggun/pickup.fx"
 }
+
 
 entityDef ammo_lightninggun_mp
 {	
 	"inherit"				"ammo_railgun_mp"
 }
 
+
 entityDef ammo_dmg
 {
 	"inherit"				"ammo_default"
 
+
 	"editor_usage"				"Dark Matter Gun Ammo"
+
 
 	"spawnclass"				"idItem"
 	"model"					"models/pick_ups/sp_pickups/sp_darkmatter.lwo"
 	"size"					"32 32 32"
 
+
 	"inv_ammo_dmg"				"5"
 	"inv_name"				"#str_107419"
 	"inv_icon"				"gfx/guis/hud/icons/item_darkmatter.tga"
 
+
 	"editor_ignore"				"0"
-	
+
+
 	"fx_idle"				"effects/weapons/dmg/pickup.fx"
 }
+
 
 entityDef ammo_dmg_mp
 {
 	"inherit"				"ammo_railgun_mp"
 }
 
+
 //---------------------------------------------------------------
 // moveable ammo
 
+
 entityDef ammo_moveable	{
+
 
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
@@ -283,10 +348,12 @@ entityDef ammo_moveable	{
 	"bouncyness"				"0.6"
 }
 
+
 entityDef ammo_machinegun_moveable
 {	
 	"inherit"					"ammo_machinegun"
 	"inherit2"					"ammo_triggersize_SP"	
+
 
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
@@ -296,14 +363,17 @@ entityDef ammo_machinegun_moveable
 	"mass"					"2000"
 	"friction"				"0.4"
 	"bouncyness"				"0.3"
-	
+
+
 }
+
 
 entityDef ammo_hyperblaster_moveable
 {	
 	"inherit"				"ammo_hyperblaster"
 	"inherit2"				"ammo_triggersize_SP"	
 
+
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
 	"noimpact"				"1"
@@ -312,14 +382,17 @@ entityDef ammo_hyperblaster_moveable
 	"mass"					"4000"
 	"friction"				"0.4"
 	"bouncyness"				"0.3"
-	
+
+
 }
+
 
 entityDef ammo_nailgun_moveable
 {	
 	"inherit"				"ammo_nailgun"
 	"inherit2"				"ammo_triggersize_SP"	
 
+
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
 	"noimpact"				"1"
@@ -330,10 +403,12 @@ entityDef ammo_nailgun_moveable
 	"bouncyness"				"0.3"
 }
 
+
 entityDef ammo_rocketlauncher_moveable
 {	
 	"inherit"				"ammo_rocketlauncher"
 	"inherit2"				"ammo_triggersize_SP"	
+
 
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
@@ -345,10 +420,12 @@ entityDef ammo_rocketlauncher_moveable
 	"bouncyness"				"0.2"
 }
 
+
 entityDef ammo_grenadelauncher_moveable
 {	
 	"inherit"				"ammo_grenadelauncher"
 	"inherit2"				"ammo_triggersize_SP"	
+
 
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
@@ -360,10 +437,12 @@ entityDef ammo_grenadelauncher_moveable
 	"bouncyness"				"0.3"
 }
 
+
 entityDef ammo_railgun_moveable
 {	
 	"inherit"				"ammo_railgun"
 	"inherit2"				"ammo_triggersize_SP"	
+
 
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
@@ -375,10 +454,12 @@ entityDef ammo_railgun_moveable
 	"bouncyness"				"0.3"
 }
 
+
 entityDef ammo_shotgun_moveable
 {	
 	"inherit"				"ammo_shotgun"
 	"inherit2"				"ammo_triggersize_SP"	
+
 
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
@@ -390,10 +471,12 @@ entityDef ammo_shotgun_moveable
 	"bouncyness"				"0.3"
 }
 
+
 entityDef ammo_lightninggun_moveable
 {	
 	"inherit"				"ammo_lightninggun"
 	"inherit2"				"ammo_triggersize_SP"	
+
 
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
@@ -405,10 +488,12 @@ entityDef ammo_lightninggun_moveable
 	"bouncyness"				"0.4"
 }
 
+
 entityDef ammo_dmg_moveable
 {	
 	"inherit"				"ammo_dmg"
 	"inherit2"				"ammo_triggersize_SP"	
+
 
 	"spawnclass"				"idMoveableItem"
 	"nodrop"				"0"
