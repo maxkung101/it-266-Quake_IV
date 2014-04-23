@@ -81,7 +81,8 @@ entityDef weapon_grenadelauncher
 	"dirOffset"					"0 0 .2"
 	
 	"inv_weapon"				"weapon_grenadelauncher"
-	"inv_start_ammo_grenadelauncher"	"10"
+	//"inv_start_ammo_grenadelauncher"	"10"
+	"inv_start_ammo_grenadelauncher"	"20"
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_grenade.tga"
 	"inv_name"					"#str_107403"	
@@ -94,7 +95,8 @@ entityDef weapon_grenadelauncher
 	"mtr_icon"					"gfx/guis/hud/icons/gun_grenadelauncher"
 
 	"ammoRegenStep"				"1"
-	"ammoRegenTime"				"2000"
+	//"ammoRegenTime"				"2000"
+	"ammoRegenTime"				"500"
 
 	"muzzle_kick_time"			"0.8"
 	"muzzle_kick_maxtime"		"0.8"
@@ -105,8 +107,10 @@ entityDef weapon_grenadelauncher
 	"recoilAngles"				"-.20 0 0"
 	
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"0.99 0.84 .31"
-	"flashRadius"				"200"
+	//"flashColor"				"0.99 0.84 .31"
+	"flashColor"				"0.45 0.27 .55"
+	//"flashRadius"				"200"
+	"flashRadius"				"400"
 	"flashPointLight"			"1"
 	"flashTime"					".1"
 	"flashViewOffset"			"15 -5 -5"
@@ -138,7 +142,21 @@ entityDef weapon_grenadelauncher
 
 entityDef weapon_grenadelauncher_mp
 {
-	"inherit"				"weapon_railgun_mp"
+	"inherit"				"weapon_grenadelauncher"
+	"clipsize"				"0"
+	"editor_ignore"				"1"
+	"inv_icon"				"gfx/guis/hud/icons/item_grenade_colored"
+	"triggerSize"				"32"
+	
+	"muzzle_kick_time"			"0"
+	"muzzle_kick_maxtime"			"0"
+	"muzzle_kick_angles"			"0 0 0"
+	"muzzle_kick_offset"			"0 0 0"
+	"recoilTime"				"0"
+	"recoilAngles"				"0 0 0"
+
+	"respawn_Team DM"			"30"
+	"respawn_Tourney"			"15"
 
 }
 
@@ -228,8 +246,10 @@ entityDef projectile_grenade
 	
 	"linear_friction"			"0"
 	"angular_friction"			"0"
-	"contact_friction"			"10"
-	"bounce"					".65"
+	//"contact_friction"			"10"
+	"contact_friction"			"5"
+	//"bounce"					".65"
+	"bounce"					".86"
 	"gravity"					"1"
 	"fuse"						"2.5"
 								

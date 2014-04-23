@@ -70,7 +70,8 @@ entityDef weapon_rocketlauncher
 	"joint_world_flash"			"muzzle_flash"
 
 	"inv_weapon"				"weapon_rocketlauncher"
-	"inv_start_ammo_rocketlauncher"	"10"
+	//"inv_start_ammo_rocketlauncher"	"10"
+	"inv_start_ammo_rocketlauncher"	"5"
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_rocket.tga"
 	"inv_name"					"#str_107409"	
@@ -143,7 +144,8 @@ entityDef moveable_item_rocketlauncher
 
 
 	"spawnclass"				"idMoveableItem"
-	"mass"						"5000"
+	//"mass"						"5000"
+	"mass"						"1000"
 	"density"					"0.05"
 	"friction"					"0.2"
 	"bouncyness"				"0"
@@ -151,7 +153,20 @@ entityDef moveable_item_rocketlauncher
 
 entityDef weapon_rocketlauncher_mp
 {
-	"inherit"				"weapon_railgun_mp"
+	"inherit"				"weapon_rocketlauncher"
+	
+	"muzzle_kick_time"			"0"
+	"muzzle_kick_maxtime"			"0"
+	"muzzle_kick_angles"			"0 0 0"
+	"muzzle_kick_offset"			"0 0 0"
+	"recoilTime"				"0"
+	"recoilAngles"				"0 0 0"
+	
+	"inv_icon"				"gfx/guis/hud/icons/item_rocket_colored"
+	"triggerSize"				"32"
+	
+	"respawn_Team DM"			"30"
+	"respawn_Tourney"			"15"
 }
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -366,7 +381,8 @@ entityDef projectile_rocket_homing
 
 entityDef damage_rocketDirect 
 {
-	"damage"					"150"
+	//"damage"					"150"
+	"damage"					"200"
 	"push"						"45000"
 	"gib"						"1"
 
@@ -382,15 +398,19 @@ entityDef damage_rocketDirect
 entityDef damage_rocketDirect_mp
 {
 	"inherit"					"damage_rocketDirect"
-	"damage"					"100"
+	//"damage"					"100"
+	"damage"					"150"
 	"knockback"					"100"
 }
 
 entityDef damage_rocketSplash 
 {
-	"damage"					"150"
-	"radius"					"180"
-	"knockback"					"100"
+	//"damage"					"150"
+	"damage"					"200"
+	//"radius"					"180"
+	"radius"					"210"
+	//"knockback"					"100"
+	"knockback"					"200"
 	"push"						"10000"
 	"gib"						"0"
 
@@ -406,7 +426,10 @@ entityDef damage_rocketSplash
 entityDef damage_rocketSplash_mp
 {
 	"inherit"					"damage_rocketSplash"
-	"knockback"					"100"
+	//"knockback"					"100"
+	"knockback"					"200"
+	//"damage"					"100"
 	"damage"					"100"
-	"radius"					"120"
+	//"radius"					"120"
+	"radius"					"180"
 }

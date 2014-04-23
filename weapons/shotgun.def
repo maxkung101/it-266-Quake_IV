@@ -84,7 +84,8 @@ entityDef weapon_shotgun
 	"hitscans"				"10"
 
 	"inv_weapon"				"weapon_shotgun"
-	"inv_start_ammo_shotgun"		"10"
+	//"inv_start_ammo_shotgun"		"10"
+	"inv_start_ammo_shotgun"		"30"
 	"inv_item"				"1"
 	"inv_icon"				"gfx/guis/hud/icons/item_shotgun.tga"
 	"inv_name"				"#str_107410"
@@ -150,7 +151,27 @@ entityDef weapon_shotgun
 
 entityDef weapon_shotgun_mp
 {
-	"inherit"				"weapon_railgun_mp"
+	"inherit"				"weapon_shotgun"
+	"clipsize"				"0"
+	"hidesurface"				"models/weapons/shotgun/clip"
+	// q3 style spread
+	"shotgunSpreadStyle"			"1"
+	"spread"				"700"
+	"hitscans"				"11"
+	"editor_ignore"				"1"
+	"range"					"131072"
+	"fireRate"				"1.0"
+	"inv_icon"				"gfx/guis/hud/icons/item_shotgun_colored"
+	"triggerSize"				"32"
+	
+	"muzzle_kick_time"			"0"
+	"muzzle_kick_maxtime"			"0"
+	"muzzle_kick_angles"			"0 0 0"
+	"muzzle_kick_offset"			"0 0 0"
+	"recoilTime"				"0"
+	"recoilAngles"				"0 0 0"
+	"respawn_Team DM"			"30"
+	"respawn_Tourney"			"15"
 }
 
 entityDef moveable_item_shotgun

@@ -63,7 +63,8 @@ entityDef weapon_gauntlet
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponGauntlet"
 	"weaponname"				"Gauntlet"
-	"size"						"32 32 32"
+	//"size"						"32 32 32"
+	"size"						"27 27 27"
 
   	"model_view"				"weapon_gauntlet_view"
   	"model_view_strogg"			"weapon_gauntlet_view_strogg"
@@ -131,7 +132,8 @@ entityDef weapon_gauntlet
 	
 	"joint_blade"				"center"
 	"blade_spinfast"			"900 0 0"
-	"blade_spinslow"			"90 0 0"
+	//"blade_spinslow"			"90 0 0"
+	"blade_spinslow"			"0 0 0"
 	"blade_accel"				".25"
 
 	"def_damage"				"damage_gauntlet"
@@ -139,9 +141,11 @@ entityDef weapon_gauntlet
 	"fx_impact_flesh"			"effects/weapons/gauntlet/impact_flesh.fx"
 	"fx_impact_monstermetal"	"effects/weapons/gauntlet/impact_monstermetal.fx"
 	//"range"						"32"
-	"range"						"48"
+	//"range"						"48"
+	"range"						"64"
 	//"fireRate"					".075"
-	"fireRate"					".4"
+	//"fireRate"					".4"
+	"fireRate"					".1"
 
 	"has_windup"				"1"
 	"snd_hit"				"weapon_mp_gauntlet_impact"

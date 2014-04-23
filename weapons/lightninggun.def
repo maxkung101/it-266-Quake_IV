@@ -76,7 +76,8 @@ entityDef weapon_lightninggun
 	"joint_hideGun_flash"		"waist"
 
 	"inv_weapon"						"weapon_lightninggun"
-	"inv_start_ammo_lightninggun"		"100"
+	//"inv_start_ammo_lightninggun"		"100"
+	"inv_start_ammo_lightninggun"		"500"
 	"inv_item"							"1"
 	"inv_icon"							"gfx/guis/hud/icons/item_lightning.tga"
 	"inv_name"							"#str_107405"
@@ -171,7 +172,22 @@ entityDef moveable_item_lightning_gun
 
 entityDef weapon_lightninggun_mp
 {
-	"inherit"				"weapon_railgun_mp"
+	"inherit"				"weapon_lightninggun"
+	"inv_icon"				"gfx/guis/hud/icons/item_lightning_colored"
+	"triggerSize"				"32"
+
+	"range"					"768"
+	"fx_trail_noimpact"			"effects/weapons/lightninggun/trail_noimpact.fx"	
+	
+	"muzzle_kick_time"			"0"
+	"muzzle_kick_maxtime"			"0"
+	"muzzle_kick_angles"			"0 0 0"
+	"muzzle_kick_offset"			"0 0 0"
+	"recoilTime"				"0"
+	"recoilAngles"				"0 0 0"
+	
+	"respawn_Team DM"			"30"
+	"respawn_Tourney"			"15"
 }
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -196,7 +212,8 @@ entityDef weaponmod_lightninggun_chain
 	"spawnclass"				"idItem"
 	"size"						"32 32 32"
 	"inv_weaponmod"				"wpmod_lightninggun_chain"
-	"inv_ammo_lightninggun"		"100"
+	//"inv_ammo_lightninggun"		"100"
+	"inv_ammo_lightninggun"		"200"
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_lightning.tga"
 	"inv_name"					"#str_107434"

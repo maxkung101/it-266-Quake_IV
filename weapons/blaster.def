@@ -310,7 +310,8 @@ entityDef projectile_blaster_charged
 entityDef damage_blaster
 {
 	"inherit"					"damage_bullet"
-	"damage"					"8"
+	//"damage"					"8"
+	"damage"					"10"
 
 	"fx_wound"					"effects/wounds/energy.fx"
 
@@ -322,14 +323,16 @@ entityDef damage_blaster
 entityDef damage_blaster_charged
 {
 	"inherit"					"damage_blaster"
-	"damage"					"50"
+	//"damage"					"50"
+	"damage"					"55"
 }
 
 entityDef damage_blastersplash_charged
 {
 	"inherit"					"damage_blaster"
 	
-	"damage"					"40"
+	//"damage"					"40"
+	"damage"					"45"
 	"radius"					"50"
 	"knockback"					"30"
 	"push"						"2500"
