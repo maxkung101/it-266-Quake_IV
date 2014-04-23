@@ -8,4 +8,3 @@ Quake IV is a first person shooter game developed by id software. Gameplay inclu
 
 Edits
 =====
-I have made this modification where players can play railgun laser tag. Players can only pick up the railgun.
