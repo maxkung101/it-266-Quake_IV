@@ -6,5 +6,6 @@ About Quake IV
 ==============
 Quake IV is a first person shooter game developed by id software. Gameplay includes single player mode, and multiplayer mode.
 
-Edits
-=====
+DEF Edits
+=========
+Weapons have more or less ammo
