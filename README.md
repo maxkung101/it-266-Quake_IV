@@ -1,10 +1,10 @@
 it-266-Quake_IV
 ===============
-This is the repository where I make Quake IV modifications for NJIT's course IT 266.
+This is the repository where I make Quake IV modifications for NJIT's course IT 266 using DEF files.
 
 About Quake IV
 ==============
-Quake IV is a first person shooter game developed by id software. Gameplay includes single player mode, and multiplayer mode.
+Quake IV is a first person shooter game developed by id software and Raven. Gameplay includes single player mode, and multiplayer mode.
 
 DEF Edits
 =========
