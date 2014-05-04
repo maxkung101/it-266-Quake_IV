@@ -8,6 +8,8 @@ Quake IV is a first person shooter game developed by id software and Raven. Game
 
 DEF Edits
 =========
-Weapons have more or less ammo
+Weapons have more or less ammo.
 
-Testing link [a link] (https://github.com/maxkung101/it-266-Quake_IV_source)
+Source code
+===========
+To see the repository for the source code (programmed in C++), click [here.] (https://github.com/maxkung101/it-266-Quake_IV_source)
