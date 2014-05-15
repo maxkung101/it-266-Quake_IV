@@ -8,7 +8,7 @@ Quake IV is a first person shooter game developed by id software and Raven. Game
 
 DEF Edits
 =========
-The gauntlet is an insta KO weapon inspired by Assasin's Creed. Use it to kill your opponents instantly.
+The gauntlet is an insta KO weapon inspired by Assasin's Creed III. Use it to kill your opponents instantly.
 Weapons have more or less ammo.
 
 Source code
