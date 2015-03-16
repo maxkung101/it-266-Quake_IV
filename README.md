@@ -1,6 +1,6 @@
 it-266-Quake_IV
 ===============
-To load this mod into Quake 4, clone this repository into your desktop.  Then, move it into the Quake 4 folder (located in C:\Program Files (x86)\Steam\SteamApps\common\).
+To load this mod into Quake 4, clone this repository into your desktop. Create a folder called "mymod" in your computer's Quake 4 folder (located in C:\Program Files (x86)\Steam\SteamApps\common\). Make a folder named "def" in your "mymod" folder. Then, move all the files from the cloned repository into that "def" folder.
 
 About Quake IV
 ==============
