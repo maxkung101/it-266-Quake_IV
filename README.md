@@ -1,6 +1,6 @@
 it-266-Quake_IV
 ===============
-This is the repository where I make Quake IV modifications for NJIT's course IT 266 using DEF files.
+To load this mod into Quake 4, clone this repository into your desktop.  Then, move it into the Quake 4 folder (located in C:\Program Files (x86)\Steam\SteamApps\common\).
 
 About Quake IV
 ==============
