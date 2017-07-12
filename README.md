@@ -17,4 +17,4 @@ Weapons have more or less ammo.
 
 Source code
 ===========
-To see the repository for the source code (programmed in C++), click [here.] (https://github.com/maxkung101/it-266-Quake_IV_source)
+To see the repository for the source code (programmed in C++), click [here.](https://github.com/maxkung101/it-266-Quake_IV_source)
